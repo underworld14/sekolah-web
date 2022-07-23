@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">Selamat Datang Admin | <b>Sekolah Dian</b></a>
+  <form class="d-flex" role="search">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+  <div class="icon">
+      <h4>
+          <i class="fas fa-envelope mr-5" data-toggle="tooltip" title="Surat Masuk"></i>
+          <i class="fas fa-bell" data-toggle="tooltip" title="Notifikasi"></i>
+          <i class="fas fa-sign-out-alt" data-toggle="tooltip" title="Log Out"></i>
+      </h4>
+  </div>
+</div>
+</div>
+</nav>
+<div class="row no-gutters mt-5">
+<!-- menu -->
+<div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
+  <ul class="nav flex-column ml-3 mb-5">
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="siswa.html"><i class="fas fa-user-graduate"></i> Siswa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="guru.html"><i class="fas fa-chalkboard-teacher"></i> Guru</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link text-white" href="berita.html"><i class="fas fa-newspaper"></i> Berita</a>
+        </li>
+    </ul>
+</div>
+<div class="col-md-10 p-5 pt-5">
+  <h3><i class="fas fa-user-graduate"></i> Tambah Data Siswa</h3>
+  <hr>
+
+  <form class="row g-3">
+      <div class="col-md-6">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="nama" class="form-control" id="nama">
+      </div>
+      <div class="col-md-6">
+          <label for="ttl" class="form-label">Tempat Tanggal Lahir</label>
+          <input type="ttl" class="form-control" id="ttl">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Tulis Alamat Lengkap">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Wali Kelas</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Kelas</label>
+        <select id="inputState" class="form-select">
+          <option selected>Pilih Kelas</option>
+          <option>X-1</option>
+          <option>X-2</option>
+          <option>X-3</option>
+          <option>X-4</option>
+          <option>XI-IPA 1</option>
+          <option>XI-IPA 2</option>
+          <option>XI-IPS 1</option>
+          <option>XI-IPS 2</option>
+          <option>XII-IPA 1</option>
+          <option>XII-IPA 2</option>
+          <option>XII-IPS 1</option>
+          <option>XII-IPS 2</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Jurusan</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Data yang diinputkan benar
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+</div>
+</div>
