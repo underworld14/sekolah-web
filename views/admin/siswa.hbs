@@ -17,7 +17,7 @@
         </div>
       </nav>
 
-      <div class="row no-gutters mt-5">
+      <div class="row no-gutters mt-5" style="height:100%;">
         <!-- menu -->
         <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
             <ul class="nav flex-column ml-3 mb-5">
@@ -63,5 +63,12 @@
                   {{/each}}
                   </tbody>
             </table>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="/admin/siswa?page={{pagination.previousPage}}">Previous</a></li>
+            {{#times pagination.totalPages}}
+            <li class="page-item"><a class="page-link" href="#">{{this}}</a></li>
+            {{/times}}
+            <li class="page-item"><a class="page-link" href="/admin/siswa?page={{pagination.nextPage}}"">Next</a></li>
+          </ul>
         </div>
       </div>
