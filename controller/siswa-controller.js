@@ -17,7 +17,6 @@ exports.siswaPage = async (req, res) => {
     .offset(offset);
 
   const pagingData = getPagingData(totalSiswa, page, limit);
-  console.log(pagingData);
   return res.render("admin/siswa", { layout: "admin", siswa, pagination: pagingData });
 };
 
